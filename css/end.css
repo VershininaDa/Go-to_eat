@@ -1,0 +1,28 @@
+.end-window-wrapper {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+.end-window {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	color: #fffe42;
+	width: 800px;
+	font-weight: 700;
+	background-image: url("/img/new_img/FON.jpg");
+	padding: 40px;
+	border-radius: 90px;
+}
+
+.pargrap1 {
+	line-height: 50px;
+	font-size: 35px;
+}
+.pargrap2 {
+	margin-top: 40px;
+	font-size: 25px;
+	font-weight: normal;
+	
+}
