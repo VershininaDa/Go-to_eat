@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rostic's заказать доставку еды</title>
+	<link rel="icon" href="/img/Лого.svg">
+	<link rel="stylesheet" href="font/montserrat/Montserrat-Italic-VariableFont_wght.ttf">
+	<link rel="stylesheet" href="font/montserrat/Montserrat-VariableFont_wght.ttf">
+	<link rel="stylesheet" href="/css-car/style.css">
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="container">
+
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="header__logo logo">
+							<img width="150px" height="150px" src="/img/Лого.svg" alt=""></a>
+					</li>
+					<li class="nav__item">
+						<input class="header__input nav__link" placeholder="Найти ресторан..." type="text" id="elastic">
+					</li>
+					<li class="nav__item">
+						<a href="#" class="header__search-buttom buttom nav__link"><img width="16px" height="16px"
+								src="/img/search.png" alt="">Найти</a>
+					</li>
+					<li class="nav__item">
+						<a class="header__location-buttom buttom  nav__link" href="#popup">
+							<img width="16px" height="16px" src="/img/locate.png" alt="">Укажите адрес доставки</a>
+					</li>
+					<div id="popup" class="popup">
+						<a href="#header" class="popup__area"></a>
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close"><img src="/img/close.svg" width="30px" height="30px"
+										alt=""></a>
+								<div class="popup__title">Укажите адрес доставки</div>
+								<div class="popup__sub-title">
+									Чтобы курьер смог вас найти
+								</div>
+								<div class="wrapper-popup">
+									<input class="header__input" placeholder="Введите улицу и дом" type="text">
+									<a href="#" class="header__search-buttom buttom"><img class="header__popup-sourch"
+											width="16px" height="16px" src="/img/search.png" alt="">ОК</a>
+								</div>
+								<div class="map-popup" style="position:relative;overflow:hidden;"><a
+										href="https://yandex.ru/maps/org/irkutskiy_tekhnikum_arkhitektury_i_stroitelstva_shelekhovetskiy_filial/26058069814/?utm_medium=mapframe&utm_source=maps"
+										style="color:#eee;font-size:12px;position:absolute;top:0px;">Иркутский техникум
+										архитектуры и
+										строительства,
+										Шелеховецкий филиал</a><a
+										href="https://yandex.ru/maps/11275/shelekhov/category/technical_college/184106244/?utm_medium=mapframe&utm_source=maps"
+										style="color:#eee;font-size:12px;position:absolute;top:14px;">Техникум в Шелехове</a><a
+										href="https://yandex.ru/maps/11275/shelekhov/category/further_education/184106162/?utm_medium=mapframe&utm_source=maps"
+										style="color:#eee;font-size:12px;position:absolute;top:28px;">Дополнительное образование в
+										Шелехове</a><iframe
+										src="https://yandex.ru/map-widget/v1/?ll=104.076241%2C52.207154&mode=search&oid=26058069814&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRmp91RODVpAETOLUGwFG0pAEhIJK4iBrn0BtT8RBJDaxMn9nj8iBgABAgMEBSgKOABAhY4GSAFqAnJ1nQHNzMw9oAEAqAEAvQHJPh3TwgEFtq66iWGCAh3RiNC10LvQtdGF0L7QsiDRg9GH0LjQu9C40YnQtYoCAJICBTExMjc1mgIMZGVza3RvcC1tYXBz&sll=104.076241%2C52.207154&sspn=0.020514%2C0.007567&text=%D1%88%D0%B5%D0%BB%D0%B5%D1%85%D0%BE%D0%B2%20%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5&z=16"
+										width="560" height="400" frameborder="1" allowfullscreen="true"
+										style="position:relative;"></iframe></div>
+							</div>
+						</div>
+					</div>
+					<li class="nav__item"><img class="user" width="24px" height="24px" src="/img/user.png" alt=""></li>
+				</ul>
+				<div class="header__cart cart" tabindex="0">
+					<div class="cart__text">
+						<img width="24px" height="24px" src="/img/car.png" alt="">
+						<span class="cart__quantity">0</span>
+					</div>
+					<div class="cart-content">
+						<ul class="cart-content__list" data-simplebar>
+							<!-- <li class="cart-content__item">
+								<article class="cart-content__product cart-product">
+									<img src="#" alt="" class="cart-product__img">
+									<div class="cart-product__text">
+										<h3 class="cart-product__title">
+										</h3>
+										<span class="cart-product__price">0 ₽</span>
+									</div>
+									<button class="cart-product__delete" aria-label="Удалить товар"></button>
+								</article>
+							</li> -->
+							<!-- <span class="cart-product__price"></span> -->
+						</ul>
+						<div class="cart-content__bottom">
+							<div class="cart-content__fullprice">
+								<span>Итого:</span>
+								<span class="fullprice">568 789 ₽</span>
+							</div>
+						
+							<a class="cart-content__btn btn" href="/end.html" >Оформить заказ</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="content">
+
+		<img src="/img/Эллипс 7.svg" alt="" class="cercl1">
+		<img src="/img/Эллипс 7.svg" alt="" class="cercl2">
+		<!-- <section class="section-background">
+			<div class="overlay">
+				<div class="main-word">
+					"Вкусные моменты, доставленные к вам!"
+				</div>
+			</div>
+		</section>-->
+		<!-- <h1 class="title">Кафе и рестораны</h1> -->
+		<div class="container">
+			<div class="car-top">
+				<a href="/index2.html" class="back"> <img class="back-arrow" width="30px" height="30px" src="/img/arrow.png"
+						alt="">Назад</a>
+			</div>
+			<div class="photo-kaffe-container">
+				<div class="photo-kaffe">
+					<div class="name-kafe">Rostic's</div>
+				</div>
+
+			</div>
+			<div class="products-content grid-container">
+				<ul class="products-grid">
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/картоха.png" alt="Фри"></div>
+									</div>
+
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Картофель фри большой</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<!-- <span class="product__available">В наличии: 13 шт</span> -->
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">250₽</span>
+								<!-- <span class="product-price__old">194 578 ₽</span> -->
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/коллла эвервес.png"
+												alt="эвервес"></div>
+									</div>
+
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Колла Эвервес</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+								<!-- <span class="product__testimonials">83 отзыва</span> -->
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+								<!-- <span class="product__available">В наличии: 13 шт</span> -->
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">140 ₽</span>
+								<!-- <span class="product-price__old">194 578 ₽</span> -->
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img
+												src="/img/ меню ростикс/комбо на компанию 4-5-12 человек.png"
+												alt="комбо на компанию 4-5-12 человек"></div>
+									</div>
+
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Комбо на компанию 4-5-12</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">678 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/комбо с биг маэстро.png"
+												alt="комбо с биг маэстро"></div>
+									</div>
+
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Комбо с Биг-Маэстро</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">350₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/комбо-бургеры.png"
+												alt="Макбук"></div>
+									</div>
+
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Комбо бургеры</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">680 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/кофе дуэт.png" alt="офе дуэт">
+										</div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Кофе-Дуэт</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,5
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">367₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/крылышки.png" alt="крылышки">
+										</div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Крылышки Острые 6/12/24 шт</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									5
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">300/400/600₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/ролл с курицей.png"
+												alt="ролл с курицей"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Ролл с курицей</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									5
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">286 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="/img/ меню ростикс/ростмастер.png"
+												alt="ростмастер"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Рост-мастер</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__rating">
+									<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
+									</svg>
+									4,7
+								</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term">Артикул: 879876</span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">348 ₽</span>
+							</div>
+							<button class="product__btn btn">Добавить в корзину</button>
+						</article>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<span class="footer-line"></span>
+			<h4>О компании</h4>
+			<ul>
+				<li><a href="#" class="footer__list">Пользовательское соглашение</a></li>
+				<li><a href="#" class="footer__list">Контакты</a></li>
+				<li><a href="#" class="footer__list">Доставка</a></li>
+				<li><a href="#" class="footer__list">Работа у нас</a></li>
+				<li><a href="#" class="footer__list">Отзывы</a></li>
+			</ul>
+			<span class="footer-line"></span>
+		</div>
+
+	</footer>
+	<script src="/js-car/simplebar.js"></script>
+	<script src="/js-car/product.js"></script>
+	<script src="/js-car/fixed-block.js"></script>
+	<script src="/js-car/cart.js"></script>
+</body>
+
+</html>

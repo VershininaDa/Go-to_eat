@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/font/montserrat/Montserrat-Italic-VariableFont_wght.ttf">
+	<link rel="stylesheet" href="/font/montserrat/Montserrat-VariableFont_wght.ttf">
+	<link rel="icon" href="/img/new_img/LOGO_header.jpeg">
+	<link rel="stylesheet" href="/css/nullstyle.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/form.css">
+
+	<title>Авторизация</title>
+</head>
+
+<body>
+	<h1 class="avtorization__title">GO-to-EAT</h1>
+	<div class="wrapper">
+	
+		<form action="" id="loginForm">
+			<h1>Вход</h1>
+			<div class="input-box">
+				<input id="username" type="text" placeholder="Имя" required>
+				<img src="/img/user.png" width="16px" height="16px" alt="">
+			</div>
+			<div class="input-box">
+				<input id="password" type="password" placeholder="Пароль" required>
+				<img src="/img/lock.svg" width="16px" height="16px" alt="">
+			</div>
+			<div class="remember">
+				<label for=""> <input type="checkbox">Запомнить меня</label>
+				<a href="#">Забыли пароль?</a>
+			</div>
+			<button type="submit" class="btn">Войти</button>
+			<p id="ms"></p>
+			<div class="register-link">
+				<p>Нет аккаунта? <a href="#">Регистрация</a></p>
+			</div>
+
+		</form>
+		<div id="message" class="hidden"></div>
+	</div>
+	<script src="/js/avtorezation.js"></script>
+</body>
+
+</html>

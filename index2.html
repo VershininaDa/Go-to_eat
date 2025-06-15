@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/img/new_img/LOGO_header.jpeg">
+	<link rel="stylesheet" href="/font/montserrat/Montserrat-Italic-VariableFont_wght.ttf">
+	<link rel="stylesheet" href="/font/montserrat/Montserrat-VariableFont_wght.ttf">
+	<link rel="stylesheet" href="/css/nullstyle.css">
+	<link rel="stylesheet" href="/css/index-css.css">
+
+	<title>Доставка еды GO-to-EAT</title>
+</head>
+
+<body>
+	<header id="header" class="header">
+		<div class="container">
+
+			<a class="header__logo logo" href="/index.html">
+				<img width="180px" height="100px" src="/img/new_img/LOGO_header.jpeg" alt="">
+			</a>
+
+			<div class="header__wrap">
+
+				<!-- <input class="header__input" placeholder="Найти ресторан..." type="text" id="elastic"> -->
+				<!-- <a href="#" class="header__search-buttom buttom"><img width="16px" height="16px" src="/img/search.png"
+						alt=""> Найти</a> -->
+
+				<a class="header__location-buttom buttom" href="#popup">Укажите адрес доставки</a>
+				<div id="popup" class="popup">
+
+					<a href="#header" class="popup__area"></a>
+					<div class="popup__body">
+						<div class="popup__content">
+							<a href="#" class="popup__close"><img src="/img/close.svg" width="30px" height="30px" alt=""></a>
+							<div class="popup__title">Укажите адрес доставки</div>
+							<div class="popup__sub-title">
+								Чтобы курьер смог вас найти
+							</div>
+							<div class="wrapper-popup">
+								<input class="header__input" placeholder="Введите улицу и дом" type="text">
+								<a href="#" class="header__search-buttom buttom"><img class="header__popup-sourch" width="16px"
+										height="16px" src="/img/search.png" alt="">ОК</a>
+							</div>
+							<div class="map-popup" style="position:relative;overflow:hidden;"><a
+									href="https://yandex.ru/maps/org/irkutskiy_tekhnikum_arkhitektury_i_stroitelstva_shelekhovetskiy_filial/26058069814/?utm_medium=mapframe&utm_source=maps"
+									style="color:#eee;font-size:12px;position:absolute;top:0px;">Иркутский техникум архитектуры и
+									строительства,
+									Шелеховецкий филиал</a><a
+									href="https://yandex.ru/maps/11275/shelekhov/category/technical_college/184106244/?utm_medium=mapframe&utm_source=maps"
+									style="color:#eee;font-size:12px;position:absolute;top:14px;">Техникум в Шелехове</a><a
+									href="https://yandex.ru/maps/11275/shelekhov/category/further_education/184106162/?utm_medium=mapframe&utm_source=maps"
+									style="color:#eee;font-size:12px;position:absolute;top:28px;">Дополнительное образование в
+									Шелехове</a><iframe
+									src="https://yandex.ru/map-widget/v1/?ll=104.076241%2C52.207154&mode=search&oid=26058069814&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRmp91RODVpAETOLUGwFG0pAEhIJK4iBrn0BtT8RBJDaxMn9nj8iBgABAgMEBSgKOABAhY4GSAFqAnJ1nQHNzMw9oAEAqAEAvQHJPh3TwgEFtq66iWGCAh3RiNC10LvQtdGF0L7QsiDRg9GH0LjQu9C40YnQtYoCAJICBTExMjc1mgIMZGVza3RvcC1tYXBz&sll=104.076241%2C52.207154&sspn=0.020514%2C0.007567&text=%D1%88%D0%B5%D0%BB%D0%B5%D1%85%D0%BE%D0%B2%20%D1%83%D1%87%D0%B8%D0%BB%D0%B8%D1%89%D0%B5&z=16"
+									width="560" height="400" frameborder="1" allowfullscreen="true"
+									style="position:relative;"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="user" width="24px" height="24px" src="/img/user.png" alt="">
+				<div class="header__exit cart buttom" tabindex="0">
+					<div class="cart__text">
+						<img width="24px" height="24px" src="/img/car.png" alt="">
+						<span class="cart__quantity">0</span>
+					</div>
+					<div class="cart-content">
+						<ul class="cart-content__list" data-simplebar>
+							<!-- <li class="cart-content__item">
+												<article class="cart-content__product cart-product">
+													<img src="#" alt="" class="cart-product__img">
+													<div class="cart-product__text">
+														<h3 class="cart-product__title">
+														</h3>
+														<span class="cart-product__price">0 ₽</span>
+													</div>
+													<button class="cart-product__delete" aria-label="Удалить товар"></button>
+												</article>
+											</li> -->
+							<!-- <span class="cart-product__price"></span> -->
+						</ul>
+						<div class="cart-content__bottom">
+							<div class="cart-content__fullprice">
+								<span>Итого:</span>
+								<span class="fullprice">568 789 ₽</span>
+							</div>
+							<div class="cart-content__btn btn">Оформить заказ</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</header>
+
+	<main class="main">
+
+		<!-- <img src="/img/new_img/элипс_фон.svg" alt="" class="cercl1">
+		<img src="/img/new_img/Эллипс 8.svg" alt="" class="cercl2"> -->
+		<section class="container">
+			<div class="overlay">
+				<div class="main-word">
+					"Вкусные моменты, доставленные к вам!"
+				</div>
+				<div class="main_logo"></div>
+			</div>
+		</section>
+		<h1 class="title">Кафе и рестораны</h1>
+
+		<div class="section-card">
+			<div class="container">
+
+				<input class="header__input sourche_caffe" placeholder="Найти ресторан..." type="text" id="elastic">
+				<div class="section3 elastic">
+					<div class="products-container">
+						<!-- Карточка 1 -->
+						<div class="product-card">
+							<img src="/img/new_img/денер_гриль.jpeg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Денер гриль</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(75)</span>
+								</div>
+								<div class="product-price">Средний чек 356 ₽</div>
+								<a href="/car-dener-gril.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/мяскоф.jpeg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Villa Pasta</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(38)</span>
+								</div>
+								<div class="product-price">Средний чек 990 ₽</div>
+								<a href="/vita-pasta.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/Чайхана.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Чайхана Три Казана</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★</div>
+									<span class="rating-count">(128)</span>
+								</div>
+								<div class="product-price">Средний чек 550 ₽</div>
+								<a href="/chayhanaa.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/в_лаваше.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">VЛАVАШЕ</h3>
+								<div class="product-rating">
+									<div class="stars">★★★</div>
+									<span class="rating-count">(28)</span>
+								</div>
+								<div class="product-price">Средний чек 230 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/молодежь.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Молодежно</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(174)</span>
+								</div>
+								<div class="product-price">Средний чек 350 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/шашлыкоф.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Шашлыклфф</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(228)</span>
+								</div>
+								<div class="product-price">Средний чек ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/Вьетнамская.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Вьетнамская</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(88)</span>
+								</div>
+								<div class="product-price">Средний чек 486 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/борщ.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Борщь у папы</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(99)</span>
+								</div>
+								<div class="product-price">Средний чек 490 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/вок.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">WOKK</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(245)</span>
+								</div>
+								<div class="product-price">Средний чек 360 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+
+						<div class="product-card">
+							<img src="/img/new_img/лбимоф.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Любимофф</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(322)</span>
+								</div>
+								<div class="product-price">Средний чек 220 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+
+						<div class="product-card">
+							<img src="/img/new_img/мясо1.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Мясковское</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(321)</span>
+								</div>
+								<div class="product-price">Средний чек ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+
+						<div class="product-card">
+							<img src="/img/new_img/пицца2222.jpg" alt=" Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Пиццерия</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(128)</span>
+								</div>
+								<div class="product-price">Средний чек ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/салат.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Вьетнамсий салат</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(135)</span>
+								</div>
+								<div class="product-price">Средний чек ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/картошка2.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Любимая столовая</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(322)</span>
+								</div>
+								<div class="product-price">Средний чек 220 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/морепродукты.jpg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Вьетнамские морепродукты</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(88)</span>
+								</div>
+								<div class="product-price">Средний чек 486 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<img src="/img/new_img/денер_гриль.jpeg" alt="Товар 1" class="product-image">
+							<div class="product-info">
+								<h3 class="product-title">Денер гриль</h3>
+								<div class="product-rating">
+									<div class="stars">★★★★★</div>
+									<span class="rating-count">(75)</span>
+								</div>
+								<div class="product-price">Средний чек 356 ₽</div>
+								<a href="/avtorization.html" class="add-to-cart">Перейти</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="footer-line"></span>
+			<h4>О компании</h4>
+			<ul>
+				<li><a href="#" class="footer__list">Пользовательское соглашение</a></li>
+				<li><a href="#" class="footer__list">Контакты</a></li>
+				<li><a href="#" class="footer__list">Доставка</a></li>
+				<li><a href="#" class="footer__list">Работа у нас</a></li>
+				<li><a href="#" class="footer__list">Отзывы</a></li>
+			</ul>
+			<span class="footer-line"></span>
+		</div>
+
+	</footer>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const searchInput = document.getElementById('elastic');
+			const dishItems = document.querySelectorAll('.product-card');
+
+			searchInput.addEventListener('input', function () {
+				const searchTerm = this.value.toLowerCase().trim();
+
+				dishItems.forEach(item => {
+					const dishName = item.textContent.toLowerCase();
+
+					if (dishName.includes(searchTerm)) {
+						item.classList.remove('hidden');
+					} else {
+						item.classList.add('hidden');
+					}
+				});
+			});
+		});
+	</script>
+	<script src="/js/cart.js"></script>
+</body>
+
+</html>
